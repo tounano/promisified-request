@@ -1,7 +1,7 @@
 Promised Request
 ================
 
-This simple module wraps Mikeal's "request" module. Instead of calling Async callbacks on certain events, this module
+This simple module wraps Mikeal's `request` module. Instead of calling Async callbacks on errors or on response, this module
 will return a Promise.
 
 ## Installation
