@@ -4,12 +4,12 @@
   "version": "0.0.1",
   "author": "ClickHere <js@clickhere.co.il>",
   "dependencies": {
-    "when": "latest",
-    "request": "latest",
-    "promisifier": "latest"
+    "when": "2.7.x",
+    "request": "2.30.x",
+    "promisifier": "0.1.x"
   },
   "devDependencies": {
-    "mocha": "latest"
+    "mocha": "1.16.x"
   },
   "keywords": [
     "promise",
