@@ -1,0 +1,26 @@
+{
+  "name": "promised-request",
+  "description": "Promisifies mikeal's request module",
+  "version": "0.0.1",
+  "author": "ClickHere <js@clickhere.co.il>",
+  "dependencies": {
+    "when": "latest",
+    "request": "latest",
+    "promisifier": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "keywords": [
+    "promise",
+    "promises",
+    "request",
+    "http"
+  ],
+  "repository": "https://github.com/tounano/promised-request.git",
+  "main": "promised-request",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT"
+}
