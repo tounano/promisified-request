@@ -1,6 +1,6 @@
 {
-  "name": "promised-request",
-  "description": "Promisifies mikeal's request module",
+  "name": "promised-request-2nd",
+  "description": "Yet another implementation for a module that promisifies mikeal's request module",
   "version": "0.0.1",
   "author": "ClickHere <js@clickhere.co.il>",
   "dependencies": {

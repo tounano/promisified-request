@@ -1,14 +1,14 @@
-Promised Request
-================
+Promised Request the 2nd
+========================
 
 This simple module wraps Mikeal's `request` module. Instead of calling Async callbacks on errors or on response, this module
 will return a Promise.
 
 ## Installation
 
-    $ npm install promised-request
+    $ npm install promised-request-2nd
 
-or simply add `promised-request` in your package.json.
+or simply add `promised-request-2nd` in your package.json.
 
 ## Functional Usage
 
@@ -24,21 +24,21 @@ So far this module implements the following methods:
 
 ### Arguments
 
-The syntax of `promised-request` is similar to the syntax of the original `request`. The only difference is the last
+The syntax of `promised-request-2nd` is similar to the syntax of the original `request`. The only difference is the last
 argument which in that case should be something that implements the `request` interface.
 
-Here are the ways to use `promised-request` methods:
+Here are the ways to use `promised-request-2nd` methods:
 
 * `method(url, options, request)`
 * `method(options, request)`
 
 ### Example
 
-Here is a demonstration of how to use `promised-request` with a Cookie Jar.
+Here is a demonstration of how to use `promised-request-2nd` with a Cookie Jar.
 
 ```javascript
 var request  = require("request");
-var pRequest = require("promised-request");
+var pRequest = require("promised-request-2nd");
 
 request = request.defaults({jar: true});
 
@@ -49,7 +49,7 @@ promise.then(console.log);
 
 ## Object Oriented Usage
 
-You can use `promised-request` as an object with instance, so you won't need to pass `request` object each time.
+You can use `promised-request-2nd` as an object with instance, so you won't need to pass `request` object each time.
 
 ### Creating Instance
 
@@ -69,7 +69,7 @@ You can use `url` or `options` or both.
 
 ```javascript
 var request  = require("request");
-var pRequest = require("promised-request");
+var pRequest = require("promised-request-2nd");
 
 request = request.defaults({jar: true});
 pRequest = pRequest.create(request);
