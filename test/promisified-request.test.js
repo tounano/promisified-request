@@ -1,4 +1,4 @@
-var moduleToTest  = "../promised-request";
+var moduleToTest  = "../promisified-request";
 var proxyquire  = require("proxyquire")
 var chai        = require("chai")
 var sinon       = require("sinon")

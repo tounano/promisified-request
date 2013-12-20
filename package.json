@@ -1,5 +1,5 @@
 {
-  "name": "promised-request-2nd",
+  "name": "promisified-request",
   "description": "Yet another implementation for a module that promisifies mikeal's request module",
   "version": "0.0.1",
   "author": "ClickHere <js@clickhere.co.il>",
@@ -18,7 +18,7 @@
     "http"
   ],
   "repository": "https://github.com/tounano/promised-request.git",
-  "main": "promised-request",
+  "main": "promisified-request",
   "engines": {
     "node": ">= 0.8.0"
   },
