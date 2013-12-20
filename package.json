@@ -17,7 +17,7 @@
     "request",
     "http"
   ],
-  "repository": "https://github.com/tounano/promised-request.git",
+  "repository": "https://github.com/tounano/promisified-request.git",
   "main": "promisified-request",
   "engines": {
     "node": ">= 0.8.0"
