@@ -1,5 +1,7 @@
-var when = require("when")
-var promisifier = require("promisifier")
+var when = require("when");
+var promisifier = require("promisifier");
+var helpers = require("./lib/helpers");
+var _ = require("underscore");
 
 var createPromisedRequest = function (request) {
 
@@ -58,7 +60,15 @@ function doRequestWithUrlAndMethod(url, options, request, method) {
   }
 }
 
-module.exports.create   = createPromisedRequest
-module.exports.get      = doGet
-module.exports.post     = doPost
-module.exports.request  = doRequest
+var PromisifiedRequestCommand = function () { helpers.AbstractDelayedCallCommand.constructor.apply(this, arguments)};
+_.extend(PromisifiedRequestCommand.prototype, helpers.AbstractDelayedCallCommand, {
+  get: function() { return this.saveCall("get"); },
+  post: function() { return this.saveCall("post"); }
+});
+
+module.exports.create   = createPromisedRequest;
+module.exports.get      = doGet;
+module.exports.post     = doPost;
+module.exports.request  = doRequest;
+
+module.exports.PromisifiedRequestCommand = PromisifiedRequestCommand;

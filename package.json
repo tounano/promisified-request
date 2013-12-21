@@ -1,7 +1,7 @@
 {
   "name": "promisified-request",
   "description": "Yet another implementation for a module that promisifies mikeal's request module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "ClickHere <js@clickhere.co.il>",
   "dependencies": {
     "when": "2.7.x",

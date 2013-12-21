@@ -12,6 +12,8 @@ var chaiAsPromised = require("chai-as-promised");
 
 chai.use(chaiAsPromised);
 
+var when = require("when");
+
 describe("promised-request", function () {
 
   var promisedRequest = require(moduleToTest);
@@ -123,6 +125,26 @@ describe("promised-request", function () {
       var request = sinon.mock().withArgs(testUrl)
       promisedRequest.request(testUrl, request)
       request.verify()
+    })
+  })
+  describe("PromisifiedRequestCommand", function () {
+    var PromisifiedRequestCommand = require(moduleToTest).PromisifiedRequestCommand;
+    var cmd = new PromisifiedRequestCommand({get: when.resolve});
+    it("can be instantiated", function () {
+      new PromisifiedRequestCommand();
+    })
+    it("is executable", function () {
+      cmd.should.have.property("execute");
+    })
+    describe("#.get()", function () {
+      it("returns itself", function () {
+        cmd.get().should.be.equal(cmd);
+      })
+    })
+    describe("#.execute()", function () {
+      it("returns a promise", function () {
+        cmd.execute().should.have.property("then");
+      })
     })
   })
 
