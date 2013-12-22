@@ -62,8 +62,8 @@ function doRequestWithUrlAndMethod(url, options, request, method) {
 
 var PromisifiedRequestCommand = function () { helpers.AbstractDelayedCallCommand.constructor.apply(this, arguments)};
 _.extend(PromisifiedRequestCommand.prototype, helpers.AbstractDelayedCallCommand, {
-  get: function() { return this.saveCall("get"); },
-  post: function() { return this.saveCall("post"); }
+  get: function () { this.saveCall.apply(this, this.combineMethodsIntoArguments("get", arguments)); return this; },
+  post: function () { this.saveCall.apply(this, this.combineMethodsIntoArguments("post", arguments)); return this; }
 });
 
 module.exports.create   = createPromisedRequest;
