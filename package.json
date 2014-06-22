@@ -6,7 +6,8 @@
   "dependencies": {
     "when": "2.7.x",
     "request": "2.30.x",
-    "promisifier": "latest"
+    "promisifier": "latest",
+    "underscore": "1.6.x"
   },
   "devDependencies": {
     "mocha": "1.16.x"
