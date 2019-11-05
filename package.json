@@ -5,7 +5,7 @@
   "author": "ClickHere <js@clickhere.co.il>",
   "dependencies": {
     "when": "2.7.x",
-    "request": "2.30.x",
+    "request": "2.88.x",
     "promisifier": "latest",
     "underscore": "1.6.x"
   },
